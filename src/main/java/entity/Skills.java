@@ -1,8 +1,5 @@
 package entity;
 
-/**
- * Created by IGOR.LAZNIUK on 29.09.2017.
- */
 public class Skills {
     private Integer id;
     private String name;

@@ -1,13 +1,9 @@
 package dao;
 
-import entity.Companies;
 import entity.Developers;
 
 import java.sql.*;
 
-/**
- * Created by IGOR.LAZNIUK on 29.09.2017.
- */
 public class DevelopersDAO extends ConnectionToDB implements DAO<Developers> {
 
 

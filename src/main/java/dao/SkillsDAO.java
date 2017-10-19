@@ -1,16 +1,9 @@
 package dao;
 
-import entity.Projects;
 import entity.Skills;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
-/**
- * Created by IGOR.LAZNIUK on 14.10.2017.
- */
 public class SkillsDAO extends ConnectionToDB implements DAO<Skills> {
     @Override
     public void create(Skills skills) {
@@ -69,8 +62,8 @@ public class SkillsDAO extends ConnectionToDB implements DAO<Skills> {
     @Override
     public void delete(int id) {
         try (Connection c = getConnection()) {
-            PreparedStatement ps=c.prepareStatement("DELETE FROM `skills` WHERE id=?;");
-            ps.setString(1,String.valueOf(id));
+            PreparedStatement ps = c.prepareStatement("DELETE FROM `skills` WHERE id=?;");
+            ps.setString(1, String.valueOf(id));
             ps.execute();
 
         } catch (SQLException e) {

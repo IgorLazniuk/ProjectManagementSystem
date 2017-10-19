@@ -1,14 +1,9 @@
 package dao;
 
 import entity.Projects;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
-/**
- * Created by IGOR.LAZNIUK on 13.10.2017.
- */
+import java.sql.*;
+
 public class ProjectsDAO extends ConnectionToDB implements DAO<Projects> {
     @Override
     public void create(Projects projects) {

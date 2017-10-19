@@ -1,8 +1,5 @@
 package entity;
 
-/**
- * Created by IGOR.LAZNIUK on 14.10.2017.
- */
 public class Customers {
 
     private Integer id;
@@ -36,5 +33,6 @@ public class Customers {
                 ", name='" + name + '\'' +
                 '}';
     }
+
     ;
 }
